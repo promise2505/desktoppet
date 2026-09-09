@@ -58,7 +58,7 @@ public class PetService extends Service {
     }
 
     private void animateWalk(long now) {
-        if (now - lastFrameAt < 115) return;
+        if (now - lastFrameAt < 180) return;
         lastFrameAt = now;
         int[] seq = facingRight ? walkRight : walkLeft;
         frame = (frame + 1) % seq.length;
